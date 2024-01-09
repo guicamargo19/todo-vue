@@ -4,7 +4,11 @@ Projeto realizado no curso de Full Stack Python pela EBAC - Escola Britânica de
 
 Projeto do módulo de VueJS.
 
-To do List é uma lista de tarefas, onde podemos inserir novas tarefas e remover tarefas realizadas.
+To do List é uma lista de tarefas, onde podemos:
+
+- Inserir novas tarefas.
+- Marcar e desmarcar tarefas como finalizadas.
+- Filtrar tarefas por Todas, Finalizadas e Pendentes.
 
 ## Recommended IDE Setup
 
