@@ -1,6 +1,10 @@
-# todo-vue
+# To do List com VueJS
 
-This template should help get you started developing with Vue 3 in Vite.
+Projeto realizado no curso de Full Stack Python pela EBAC - Escola Britânica de Artes Criativas e Tecnologia
+
+Projeto do módulo de VueJS.
+
+To do List é uma lista de tarefas, onde podemos inserir novas tarefas e remover tarefas realizadas.
 
 ## Recommended IDE Setup
 
