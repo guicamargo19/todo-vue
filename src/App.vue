@@ -39,8 +39,6 @@ const getTarefasFiltradas = () => {
       return getTarefasPendentes();
     case 'finalizadas':
       return getTarefasFinalizadas();
-    default:
-      return estado.tarefas;
   }
 }
 
