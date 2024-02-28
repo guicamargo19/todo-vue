@@ -9,12 +9,12 @@ const estado = reactive({
   tarefaTemp: '',
   tarefas: [
     {
-      titulo: 'Estudar ES6',
+      titulo: 'Estudar Django Rest Framwork',
       finalizada: false,
     },
     {
-      titulo: 'Estudar Grunt',
-      finalizada: false,
+      titulo: 'Estudar Git',
+      finalizada: true,
     },
     {
       titulo: 'Estudar TypeScript',

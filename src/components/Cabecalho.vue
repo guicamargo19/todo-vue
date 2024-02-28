@@ -5,6 +5,6 @@
 <template>
     <header class="p-5 mb-4 mt-4 bg-light rounded-3">
         <h1>To do List</h1>
-        <p>Você possui {{ props.tarefasPendentes }} tarefas pendentes.</p>
+        <p>Você possui {{ props.tarefasPendentes }} tarefas pendentes</p>
     </header>
 </template>
