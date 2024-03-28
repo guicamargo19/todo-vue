@@ -1,55 +1,57 @@
 <script setup>
-import { reactive } from 'vue';
-import Cabecalho from './components/Cabecalho.vue';
-import Formulario from './components/Formulario.vue';
-import ListaDeTarefas from './components/ListaDeTarefas.vue';
+  import { reactive } from 'vue';
+  import Cabecalho from './components/Cabecalho.vue';
+  import Formulario from './components/Formulario.vue';
+  import ListaDeTarefas from './components/ListaDeTarefas.vue';
 
-const estado = reactive({
-  filtro: "todas",
-  tarefaTemp: '',
-  tarefas: [
-    {
-      titulo: 'Estudar Django Rest Framwork',
-      finalizada: false,
-    },
-    {
-      titulo: 'Estudar Git',
-      finalizada: true,
-    },
-    {
-      titulo: 'Estudar TypeScript',
-      finalizada: false,
-    },
-  ]
-})
+  const estado = reactive({
+    filtro: "todas",
+    tarefaTemp: '',
+    tarefas: [
+      {
+        titulo: 'Estudar Django',
+        finalizada: false,
+      },
+      {
+        titulo: 'Estudar GitHub Actions',
+        finalizada: true,
+      },
+      {
+        titulo: 'Estudar Google Cloud Platform',
+        finalizada: false,
+      },
+    ]
+  })
 
-const getTarefasPendentes = () => {
-  return estado.tarefas.filter(tarefa => !tarefa.finalizada);
-}
-
-const getTarefasFinalizadas = () => {
-  return estado.tarefas.filter(tarefa => tarefa.finalizada);
-}
-
-const getTarefasFiltradas = () => {
-  const { filtro } = estado;
-
-  switch(filtro) {
-    case 'pendentes':
-      return getTarefasPendentes();
-    case 'finalizadas':
-      return getTarefasFinalizadas();
+  const getTarefasPendentes = () => {
+    return estado.tarefas.filter(tarefa => !tarefa.finalizada);
   }
-}
 
-const cadastraTarefa = () => {
-  const novaTarefa = {
-    titulo: estado.tarefaTemp,
-    finalizada: false,
+  const getTarefasFinalizadas = () => {
+    return estado.tarefas.filter(tarefa => tarefa.finalizada);
   }
-  estado.tarefas.push(novaTarefa);
-  estado.tarefaTemp = '';
-}
+
+  const getTarefasFiltradas = () => {
+    const { filtro } = estado;
+
+    switch(filtro) {
+      case 'pendentes':
+        return getTarefasPendentes();
+      case 'finalizadas':
+        return getTarefasFinalizadas();
+      default:
+        return estado.tarefas;
+    }
+  }
+
+  const cadastraTarefa = () => {
+    const novaTarefa = {
+      titulo: estado.tarefaTemp,
+      finalizada: false,
+    }
+    estado.tarefas.push(novaTarefa);
+    estado.tarefaTemp = '';
+  }
 </script>
 
 <template>

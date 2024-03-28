@@ -10,7 +10,7 @@
               required type="text" placeholder="Digite aqui a descrição da tarefa" class="form-control mb-4">
         </div>
         <div class="col-md-2">
-          <button class="btn btn-primary" type="submit">Cadastrar tarefa</button>
+          <button class="btn btn-warning" type="submit">Cadastrar tarefa</button>
         </div>
         <div class="col-md-2">
           <select @change="props.trocarFiltro" class="form-control">
