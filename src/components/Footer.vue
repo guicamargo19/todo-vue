@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <footer class="mt-5 text-center">
+  <footer class="mt-5 p-4 text-center">
     {{getYear()}}- &copy; 
     <a href="https://portfolio-pink-omega-63.vercel.app/">
       <strong>Portfólio Guilherme Camargo</strong>

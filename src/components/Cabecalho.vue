@@ -27,4 +27,30 @@
     padding-right: 20px;
     margin: 0;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .title {
+      font-size: 90px !important;
+    }
+
+    .tasks {
+      padding-top: 50px;
+      padding-right: 20px;
+      margin: 0;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .title {
+      font-size: 50px !important;
+      padding-left: 10px;
+    }
+
+    .tasks {
+      padding-top: 26px;
+      padding-right: 5px;
+      font-size: 10px;
+      margin: 0;
+    }
+  }
 </style>

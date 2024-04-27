@@ -26,4 +26,14 @@
   .item {
     cursor: pointer;
   }
+
+  @media screen and (max-width: 767px) {
+    .list-group-item {
+      font-size: 14px;
+    }
+    label {
+      display: inline;
+    }
+
+  }
 </style>

@@ -10,7 +10,7 @@
               required type="text" placeholder="Digite aqui a descrição da tarefa" class="form-control mb-4 p-2">
         </div>
         <div class="col-md-2">
-          <button class="btn p-2" type="submit">Cadastrar tarefa</button>
+          <button class="btn p-2" type="submit">Cadastrar</button>
         </div>
         <div class="col-md-2">
           <select @change="props.trocarFiltro" class="form-control p-2 text-center select">
@@ -48,5 +48,12 @@
   .select:hover {
     background-color: rgba(0, 0, 0, 0.1);
     transition: all ease-in-out .2s;
+  }
+
+  @media screen and (max-width: 767px) {
+    .btn {
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
 </style>
