@@ -2,7 +2,7 @@
 
 ## Apresentação do projeto
 
-
+https://github.com/guicamargo19/todo-vue/assets/133445061/47123074-aae5-4e9d-8c15-0daca4d32794
 
 To Do List é uma lista de tarefas desenvolvida em **Vue.js**, onde podemos inserir novas tarefas, marcar e desmarcar
 tarefas como finalizadas e filtrar tarefas por "Todas", "Finalizadas" e "Pendentes".
