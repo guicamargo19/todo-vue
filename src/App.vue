@@ -3,21 +3,22 @@
   import Cabecalho from './components/Cabecalho.vue';
   import Formulario from './components/Formulario.vue';
   import ListaDeTarefas from './components/ListaDeTarefas.vue';
+  import Footer from './components/Footer.vue';
 
   const estado = reactive({
     filtro: "todas",
     tarefaTemp: '',
     tarefas: [
       {
-        titulo: 'Estudar Django',
+        titulo: 'Integrar API Django com Python no projeto ReactJS com TypeScript',
         finalizada: false,
       },
       {
-        titulo: 'Estudar GitHub Actions',
+        titulo: 'Utilizar GitHub Actions para CI/CD',
         finalizada: true,
       },
       {
-        titulo: 'Estudar Google Cloud Platform',
+        titulo: 'Fazer deploys dos projetos na Google Cloud Platform',
         finalizada: false,
       },
     ]
@@ -59,5 +60,6 @@
     <Cabecalho :tarefas-pendentes="getTarefasPendentes().length" />
     <Formulario :trocar-filtro="evento => estado.filtro = evento.target.value" :tarefa-temp="estado.tarefaTemp" :edita-tarefa-temp="evento => estado.tarefaTemp = evento.target.value" :cadastra-tarefa="cadastraTarefa"/>
     <ListaDeTarefas :tarefas="getTarefasFiltradas()"/>
+    <Footer></Footer>
   </div>
 </template>

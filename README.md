@@ -1,8 +1,10 @@
-# To do List
+# To Do List
 
-<img src="public/todo.png">
+## Apresentação do projeto
 
-To do List é uma lista de tarefas desenvolvida em Vue.js, onde podemos inserir novas tarefas, marcar e desmarcar
+
+
+To Do List é uma lista de tarefas desenvolvida em **Vue.js**, onde podemos inserir novas tarefas, marcar e desmarcar
 tarefas como finalizadas e filtrar tarefas por "Todas", "Finalizadas" e "Pendentes".
 
 Projeto desenvolvido no curso de Full Stack Python da EBAC - Escola Britânica de Artes Criativas e Tecnologia.
